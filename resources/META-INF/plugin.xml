@@ -1,17 +1,15 @@
 <idea-plugin version="2">
-  <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
-  <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <id>com.yat.jetbrain-logger</id>
+  <name>Yat-jetbrain-logger</name>
+  <version>0.1</version>
+  <vendor email="lehdcjfl@naver.com" url="https://doublemetal.github.io">YourCompany</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      Sends a user's usage log to the analysis server
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+      This plug-in has not been developed.
     ]]>
   </change-notes>
 
@@ -29,7 +27,10 @@
   </extensions>
 
   <actions>
-    <!-- Add your actions here -->
+    <group id="Yat.SampleMenu" text="Yat" description="Menu test">
+      <add-to-group group-id="MainMenu" anchor="last"/>
+      <action id="Yat.Textboxes" class="com.yat.action.TextBoxes" text="Hello world!" description="A test menu item" />
+    </group>
   </actions>
 
 </idea-plugin>
